@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_Drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#EFEFEF"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"  >
+
+            <WebView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/wv_GoogleMap"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="right|bottom" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_Destination"
+                    android:text="前往案發地點"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/corners_black" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_Hospital"
+                    android:text="前往指定醫院"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/corners_black" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_Drawer"
+        android:layout_gravity="start"
+        android:background="#333333" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@drawable/drawer_bg" >
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/lv_Drawer_Subno"
+                android:listSelector="@android:color/transparent" />
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:id="@+id/lv_Drawer_Item"
+                android:listSelector="@android:color/transparent"
+                android:divider="@null"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
+

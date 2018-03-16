@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        html, body, #map_canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+        }
+    </style>
+    <title>Google Maps</title>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi7M3JQinH3AEQyqJhCfhMgK6pf-gwPk8"></script>
+    <script type="text/javascript">
+        function $(element) {
+            return document.getElementById(element);
+        }
+
+        var GoogleMap = {};
+
+        GoogleMap.map = null;
+        var Destination;
+        var latlngmap;
+        var latlng;
+        //導航服務
+        var directionsService = new google.maps.DirectionsService();
+        //規畫路徑呈現選項
+        var rendererOptions = { suppressMarkers: true };
+
+        GoogleMap.init = function () {
+            var latlngmap = new google.maps.LatLng(24.946785, 121.288395);
+            var options = {
+                zoom: 10,
+                center: latlngmap,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            GoogleMap.map = new google.maps.Map($('map_canvas'), options);
+
+            directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
+            directionsDisplay.setMap(GoogleMap.map);
+
+			if(APP_Function.X() != 0 & APP_Function.Y() != 0){
+                GoogleMap.showMarkers();
+			}
+        };
+        google.maps.event.addDomListener(window, 'load', GoogleMap.init);
+
+        GoogleMap.showMarkers = function () {
+            GoogleMap.markers = [];
+
+            latlng = new google.maps.LatLng(APP_Function.Y(), APP_Function.X());
+
+            var imageUrl = 'FireCar.png';
+            var markerImage = new google.maps.MarkerImage(imageUrl, new google.maps.Size(32, 32));
+
+            GoogleMap.marker = new google.maps.Marker({
+                position: latlng,
+                icon: markerImage
+            });
+
+            GoogleMap.marker.setMap(GoogleMap.map);
+        };
+        
+        GoogleMap.address = function (AddressData) {
+            if (AddressData == "") {
+                alert("請輸入地址資料");
+                return;
+            }
+            if (GoogleMap.pmarker != null) {
+                GoogleMap.pmarker.setMap(null);
+            }
+            var geocoder = new google.maps.Geocoder();  //定義一個Geocoder物件
+            geocoder.geocode(
+                { address: AddressData },    //設定地址的字串
+                function (results, status) {    //callback function
+                    if (status == google.maps.GeocoderStatus.OK) {    //判斷狀態
+                        GoogleMap.calcRoute(latlng, results[0].geometry.location);
+                    } 
+                    else {
+                        APP_Function.NError();
+                    }
+                }
+            );
+        };
+
+        GoogleMap.calcRoute = function (startPoint, endPoint) {
+            var request = {
+                origin: startPoint,   //可輸入住址名稱或Google座標
+                destination: endPoint,
+                travelMode: google.maps.TravelMode.DRIVING
+            };
+            directionsService.route(request, function (response, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                    directionsDisplay.setDirections(response);
+                    if (GoogleMap.marker != null) {
+                        GoogleMap.marker.setMap(null);
+                    }
+                    var imageUrl = 'FireCar.png';
+                    var markerImage = new google.maps.MarkerImage(imageUrl, new google.maps.Size(32, 32));
+                    GoogleMap.marker = new google.maps.Marker({
+                        position: startPoint,
+                        icon: markerImage
+                    });
+                    GoogleMap.marker.setMap(GoogleMap.map);
+
+                    if (Destination != null) {
+                        Destination.setMap(null);
+                    }
+                    Destination = new google.maps.Marker({
+                        position: endPoint
+                    });
+                    Destination.setMap(GoogleMap.map);
+                }
+            });
+        }
+         
+
+
+    </script>
+</head>
+<body>
+<div id="map_canvas"></div>
+</body>
+</html>

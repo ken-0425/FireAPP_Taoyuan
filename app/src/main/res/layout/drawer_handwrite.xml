@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_Drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#EFEFEF"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@drawable/app_content_bg"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="300dp" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="補述"
+                        android:textColor="#602f6b"
+                        android:shadowColor="#602f6b"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:textSize="35dp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/area_black_bg"
+                        android:alpha="0.8" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="補述簽名"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <ImageView
+                                android:id="@+id/iv_SNote"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="點此簽名"
+                                android:id="@+id/tv_SNote"
+                                android:textColor="#F7FA00"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="救護人員簽印"
+                        android:textColor="#602f6b"
+                        android:shadowColor="#602f6b"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:textSize="35dp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/area_black_bg"
+                        android:alpha="0.8" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="救護人員1(編號："
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <EditText
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_AStaffNO1"
+                                android:textColor="#FFFFFF"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:background="@drawable/corners_black"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@null"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" )   "
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <ImageView
+                                android:id="@+id/iv_SAStaff1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="點此簽名"
+                                android:id="@+id/tv_SAStaff1"
+                                android:textColor="#F7FA00"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="救護人員2(編號："
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <EditText
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_AStaffNO2"
+                                android:textColor="#FFFFFF"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:background="@drawable/corners_black"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@null"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" )   "
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <ImageView
+                                android:id="@+id/iv_SAStaff2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="點此簽名"
+                                android:id="@+id/tv_SAStaff2"
+                                android:textColor="#F7FA00"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="救護人員3(編號："
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <EditText
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_AStaffNO3"
+                                android:textColor="#FFFFFF"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:background="@drawable/corners_black"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@null"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" )   "
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <ImageView
+                                android:id="@+id/iv_SAStaff3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="點此簽名"
+                                android:id="@+id/tv_SAStaff3"
+                                android:textColor="#F7FA00"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="救護人員4(編號："
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <EditText
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_AStaffNO4"
+                                android:textColor="#FFFFFF"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:background="@drawable/corners_black"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@null"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" )   "
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <ImageView
+                                android:id="@+id/iv_SAStaff4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="點此簽名"
+                                android:id="@+id/tv_SAStaff4"
+                                android:textColor="#F7FA00"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="救護人員5(編號："
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <EditText
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_AStaffNO5"
+                                android:textColor="#FFFFFF"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:background="@drawable/corners_black"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@null"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" )   "
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <ImageView
+                                android:id="@+id/iv_SAStaff5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="點此簽名"
+                                android:id="@+id/tv_SAStaff5"
+                                android:textColor="#F7FA00"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="救護人員6(編號："
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <EditText
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_AStaffNO6"
+                                android:textColor="#FFFFFF"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:background="@drawable/corners_black"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@null"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" )   "
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <ImageView
+                                android:id="@+id/iv_SAStaff6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="點此簽名"
+                                android:id="@+id/tv_SAStaff6"
+                                android:textColor="#F7FA00"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="醫護人員簽印"
+                        android:textColor="#602f6b"
+                        android:shadowColor="#602f6b"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:textSize="35dp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/area_black_bg"
+                        android:alpha="0.8" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="檢傷分級"
+                                android:id="@+id/tv_IClassification"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent" >
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_IClassification1"
+                                    android:text="一級"
+                                    android:textColor="@drawable/radio_text_color"
+                                    android:background="@drawable/radio_left"
+                                    android:button="@null"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_IClassification2"
+                                    android:text="二級"
+                                    android:textColor="@drawable/radio_text_color"
+                                    android:background="@drawable/radio_center"
+                                    android:button="@null"
+                                    android:layout_marginRight="1dp"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_IClassification3"
+                                    android:text="三級"
+                                    android:textColor="@drawable/radio_text_color"
+                                    android:background="@drawable/radio_center"
+                                    android:button="@null"
+                                    android:layout_marginRight="1dp"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_IClassification4"
+                                    android:text="四級"
+                                    android:textColor="@drawable/radio_text_color"
+                                    android:background="@drawable/radio_center"
+                                    android:button="@null"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_IClassification5"
+                                    android:text="五級"
+                                    android:textColor="@drawable/radio_text_color"
+                                    android:background="@drawable/radio_right"
+                                    android:button="@null"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="醫護人員簽印"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <ImageView
+                                android:id="@+id/iv_SHStaff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="點此簽名"
+                                android:id="@+id/tv_SHStaff"
+                                android:textColor="#F7FA00"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="拒絕送醫簽名"
+                        android:textColor="#602f6b"
+                        android:shadowColor="#602f6b"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:textSize="35dp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/area_black_bg"
+                        android:alpha="0.8" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="拒絕醫療聲明"
+                                android:id="@+id/cb_RHospital"
+                                android:textSize="25dp"
+                                android:checked="false"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="：本人聲明：救護人員已解釋病情與送醫之需要，但我"
+                                android:layout_marginRight="5dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent" >
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_RHospital1"
+                                    android:text="拒絕任何救護"
+                                    android:textColor="@drawable/radio_text_color"
+                                    android:background="@drawable/radio_left"
+                                    android:button="@null"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_RHospital2"
+                                    android:text="拒絕送醫"
+                                    android:textColor="@drawable/radio_text_color"
+                                    android:background="@drawable/radio_right"
+                                    android:button="@null"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="關係："
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp"/>
+
+                                <Spinner
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:id="@+id/sp_RRelationship"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_marginRight="5dp" />
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_RRelationship"
+                                    android:textColor="#FFFFFF"
+                                    android:background="@drawable/corners_black"
+                                    android:visibility="gone"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="25dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="2" >
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="簽名"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <ImageView
+                                android:id="@+id/iv_SRRelationship"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="點此簽名"
+                                android:id="@+id/tv_SRRelationship"
+                                android:textColor="#F7FA00"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="送醫後傷病患/家屬/關係人簽名"
+                        android:textColor="#602f6b"
+                        android:shadowColor="#602f6b"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:textSize="35dp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/area_black_bg"
+                        android:alpha="0.8" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="關係："
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp"/>
+
+                                <Spinner
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:id="@+id/sp_Relationship"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_marginRight="5dp" />
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_Relationship"
+                                    android:textColor="#FFFFFF"
+                                    android:background="@drawable/corners_black"
+                                    android:visibility="gone"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="25dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="連絡電話"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_Phone"
+                                    android:textColor="#FFFFFF"
+                                    android:background="@drawable/corners_black"
+                                    android:singleLine="true"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1" >
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="病人或家屬簽名"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <ImageView
+                                android:id="@+id/iv_SRelationship"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="點此簽名"
+                                android:id="@+id/tv_SRelationship"
+                                android:textColor="#F7FA00"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_Drawer"
+        android:layout_gravity="start"
+        android:background="#333333" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@drawable/drawer_bg" >
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/lv_Drawer_Subno"
+                android:listSelector="@android:color/transparent" />
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:id="@+id/lv_Drawer_Item"
+                android:listSelector="@android:color/transparent"
+                android:divider="@null"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

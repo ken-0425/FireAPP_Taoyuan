@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/app_content_bg"
+    android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="300dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="現場狀況"
+                android:textColor="#602f6b"
+                android:shadowColor="#602f6b"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="3"
+                android:textSize="35dp"
+                android:layout_marginRight="16dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <CheckBox
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/cb_Trauma_T"
+                    android:text="創傷"
+                    android:textColor="@drawable/radio_text_color"
+                    android:background="@drawable/radio_left"
+                    android:button="@null"
+                    android:textSize="25dp"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <CheckBox
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/cb_Trauma_F"
+                    android:text="非創傷"
+                    android:textColor="@drawable/radio_text_color"
+                    android:background="@drawable/radio_right"
+                    android:button="@null"
+                    android:textSize="25dp"
+                    android:gravity="center_vertical|center_horizontal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="創傷"
+            android:id="@+id/tv_Trauma_T"
+            android:textColor="#602f6b"
+            android:shadowColor="#602f6b"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:textSize="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fl_Trauma_T"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/area_black_bg"
+                android:alpha="0.8" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp" >
+
+                   <CheckBox
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/cb_Trauma1"
+                       android:text="一般外傷"
+                       android:textSize="25dp"
+                       android:textColor="#FFFFFF"
+                       style="@style/CheckboxTheme"/>
+
+                   <LinearLayout
+                       android:orientation="horizontal"
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/ll_Trauma1_T"
+                       android:paddingLeft="5dp"
+                       android:background="#000000"
+                       android:visibility="gone" >
+
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="頭部外傷"
+                           android:id="@+id/cb_Trauma1_1"
+                           android:textSize="25dp"
+                           android:textColor="#FFFFFF"
+                           style="@style/CheckboxTheme"/>
+
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="胸部外傷"
+                           android:id="@+id/cb_Trauma1_2"
+                           android:textSize="25dp"
+                           android:textColor="#FFFFFF"
+                           style="@style/CheckboxTheme"/>
+
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="腹部外傷"
+                           android:id="@+id/cb_Trauma1_3"
+                           android:textSize="25dp"
+                           android:textColor="#FFFFFF"
+                           style="@style/CheckboxTheme"/>
+
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="背部外傷"
+                           android:id="@+id/cb_Trauma1_4"
+                           android:textSize="25dp"
+                           android:textColor="#FFFFFF"
+                           style="@style/CheckboxTheme"/>
+
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="肢體外傷"
+                           android:id="@+id/cb_Trauma1_5"
+                           android:textSize="25dp"
+                           android:textColor="#FFFFFF"
+                           style="@style/CheckboxTheme"/>
+
+                   </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="因交通事故"
+                        android:id="@+id/cb_Trauma2"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_Trauma2_T"
+                        android:paddingLeft="5dp"
+                        android:background="#000000"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="事故類別："
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent" >
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_Traffic1"
+                                    android:text="汽車"
+                                    android:textColor="@drawable/radio_text_color"
+                                    android:background="@drawable/radio_left"
+                                    android:button="@null"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_Traffic2"
+                                    android:text="機車"
+                                    android:textColor="@drawable/radio_text_color"
+                                    android:background="@drawable/radio_center"
+                                    android:button="@null"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_Traffic3"
+                                    android:text="腳踏車"
+                                    android:textColor="@drawable/radio_text_color"
+                                    android:background="@drawable/radio_center"
+                                    android:button="@null"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_Traffic4"
+                                    android:text="行人"
+                                    android:textColor="@drawable/radio_text_color"
+                                    android:background="@drawable/radio_center"
+                                    android:button="@null"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_Traffic5"
+                                    android:text="其他"
+                                    android:textColor="@drawable/radio_text_color"
+                                    android:background="@drawable/radio_right"
+                                    android:button="@null"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/et_Traffic5"
+                            android:textColor="#000000"
+                            android:background="@drawable/corners_white"
+                            android:nextFocusDown="@+id/et_Trauma2"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_Trauma_Switch2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" >
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cb_Trauma3"
+                            android:text="墜落:高度"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="(約:"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_Trauma3"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:nextFocusDown="@+id/cb_Trauma8"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="公尺)"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_Trauma4"
+                        android:text="穿刺傷"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_Trauma5"
+                        android:text="燒燙傷"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_Trauma6"
+                        android:text="電擊傷"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_Trauma7"
+                        android:text="生物咬螫傷"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_Trauma_Switch3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:id="@+id/cb_Trauma8"
+                        android:text="到院前心肺功能停止"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4" >
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cb_Trauma9"
+                            android:text="其他"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_Trauma9"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/corners_black"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="非創傷"
+            android:id="@+id/tv_Trauma_F"
+            android:textColor="#602f6b"
+            android:shadowColor="#602f6b"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:textSize="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fl_Trauma_F"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/area_black_bg"
+                android:alpha="0.8" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_NTrauma1"
+                        android:text="呼吸問題"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_NTrauma2"
+                        android:text="呼吸道問題"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_NTrauma3"
+                        android:text="昏迷"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_NTrauma4"
+                        android:text="胸痛／悶"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_NTrauma5"
+                        android:text="腹痛"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_NTrauma6"
+                        android:text="一般疾病"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_NTrauma6"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#000000"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:id="@+id/cb_NTrauma6_1"
+                        android:text="頭痛／頭暈／昏倒／昏厥"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_NTrauma6_2"
+                        android:text="發燒"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:id="@+id/cb_NTrauma6_3"
+                        android:text="噁心／嘔吐／腹瀉"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_NTrauma6_4"
+                        android:text="肢體無力"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:id="@+id/cb_NTrauma7"
+                        android:text="疑似毒藥物中毒"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:id="@+id/cb_NTrauma8"
+                        android:text="疑似一氧化碳中毒"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_NTrauma9"
+                        android:text="癲癇／抽搐"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_NTrauma10"
+                        android:text="路倒"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:id="@+id/cb_NTrauma11"
+                        android:text="行為急症/精神異常"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_NTrauma12"
+                        android:text="孕婦急產"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cb_NTrauma13"
+                        android:text="溺水"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:id="@+id/cb_NTrauma14"
+                        android:text="到院前心肺功能停止"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_NTrauma_Switch1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cb_NTrauma15"
+                        android:text="其他"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_NTrauma15"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/corners_black"
+                        android:singleLine="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OHCA"
+            android:id="@+id/tv_OHCA"
+            android:textColor="#602f6b"
+            android:shadowColor="#602f6b"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:textSize="35dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fl_OHCA"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/area_black_bg"
+                android:alpha="0.8" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="目擊者"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" >
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/cb_Witnesses1"
+                                android:text="無"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_left"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/cb_Witnesses2"
+                                android:text="有"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_right"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="旁觀者CPR"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" >
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/cb_CPR1"
+                                android:text="無"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_left"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/cb_CPR2"
+                                android:text="有"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_right"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="使用PAD"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" >
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/cb_PAD1"
+                                android:text="無"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_left"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/cb_PAD2"
+                                android:text="有"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_right"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ROSC"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" >
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/cb_ROSC1"
+                                android:text="無"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_left"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/cb_ROSC2"
+                                android:text="有"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_right"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/et_ROSC2"
+                            android:background="@drawable/corners_black"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地點型態："
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="住宅"
+                                android:id="@+id/cb_PSpecies1"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="工廠/工作地點"
+                                android:id="@+id/cb_PSpecies2"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="運動中心"
+                                android:id="@+id/cb_PSpecies3"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="街道/公路"
+                                android:id="@+id/cb_PSpecies4"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="公共建築物"
+                                android:id="@+id/cb_PSpecies5"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="療養院"
+                                android:id="@+id/cb_PSpecies6"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="教育/學校"
+                                android:id="@+id/cb_PSpecies7"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="9"
+                                android:text="捷運站/車站/機場"
+                                android:id="@+id/cb_PSpecies8"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="診所/護理之家"
+                                android:id="@+id/cb_PSpecies9"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="其他"
+                                android:id="@+id/cb_PSpecies10"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="不清楚"
+                                android:id="@+id/cb_PSpecies11"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="辛辛那堤"
+                android:textColor="#602f6b"
+                android:shadowColor="#602f6b"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="3"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/area_black_bg"
+                android:alpha="0.8" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="符合疑似腦中風指標是否異常："
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" >
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/cb_Stroke1"
+                                android:text="是"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_left"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/cb_Stroke2"
+                                android:text="否"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_right"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最後正常時間："
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_LTime"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/corners_black"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="微笑測試異常"
+                        android:id="@+id/cb_Smile"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="舉臂測試異常"
+                        android:id="@+id/cb_LArm"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="言語測試異常"
+                        android:id="@+id/cb_Speech"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        style="@style/CheckboxTheme"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

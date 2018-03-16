@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/app_content_bg"
+    android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="300dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="病患主訴"
+                android:textColor="#602f6b"
+                android:shadowColor="#602f6b"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="3"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView1"
+                android:background="@drawable/area_black_bg"
+                android:alpha="0.8" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1.感覺哪裡不舒服?"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_Q1"
+                                    android:textColor="#FFFFFF"
+                                    android:background="@drawable/corners_black"
+                                    android:nextFocusDown="@+id/et_Q2"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp" >
+
+                                <Spinner
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/sp_Q1"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2.感覺怎麼的不舒服?"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_Q2"
+                                    android:textColor="#FFFFFF"
+                                    android:background="@drawable/corners_black"
+                                    android:nextFocusDown="@+id/et_Q3"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp" >
+
+                                <Spinner
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/sp_Q2"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3.大約不舒服多久了?"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp" >
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_Q3"
+                                    android:textColor="#FFFFFF"
+                                    android:background="@drawable/corners_black"
+                                    android:nextFocusDown="@+id/et_Q4"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp" >
+
+                                <Spinner
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/sp_Q3"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.還有其他地方不舒服嗎?"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp" >
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_Q4"
+                                    android:textColor="#FFFFFF"
+                                    android:background="@drawable/corners_black"
+                                    android:nextFocusDown="@+id/et_People"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp" >
+
+                                <Spinner
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/sp_Q4"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="備註"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp" >
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_Q5"
+                                    android:textColor="#FFFFFF"
+                                    android:background="@drawable/corners_black"
+                                    android:nextFocusDown="@+id/et_People"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp" >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ll_SMHistory"
+                                android:background="@drawable/menu_switch_t"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="過去病史"
+                                    android:textColor="#ffffff"
+                                    android:textSize="25dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/iv_MHistory"
+                                    android:layout_gravity="center" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ll_MHistory" >
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp" >
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="糖尿病"
+                                        android:id="@+id/cb_MHistory1"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="高血壓"
+                                        android:id="@+id/cb_MHistory2"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="癌症"
+                                        android:id="@+id/cb_MHistory3"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp" >
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:text="慢性阻塞性肺病"
+                                        android:id="@+id/cb_MHistory4"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="氣喘"
+                                        android:id="@+id/cb_MHistory5"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp" >
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="中風"
+                                        android:id="@+id/cb_MHistory6"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="肝臟疾病"
+                                        android:id="@+id/cb_MHistory7"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="腎臟疾病"
+                                        android:id="@+id/cb_MHistory8"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp" >
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="心臟疾病"
+                                        android:id="@+id/cb_MHistory9"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="癲癇"
+                                        android:id="@+id/cb_MHistory10"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="精神疾病"
+                                        android:id="@+id/cb_MHistory11"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp" >
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" >
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="其他"
+                                            android:id="@+id/cb_MHistory12"
+                                            android:textSize="25dp"
+                                            android:textColor="#FFFFFF"
+                                            style="@style/CheckboxTheme"/>
+
+                                        <EditText
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:id="@+id/et_MHistory12"
+                                            android:textColor="#FFFFFF"
+                                            android:background="@drawable/corners_black"
+                                            android:singleLine="true"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:textSize="25dp" />
+
+                                    </LinearLayout>
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:text="無"
+                                        android:id="@+id/cb_MHistory13"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ll_SAllergies"
+                                android:background="@drawable/menu_switch_t"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="過敏史"
+                                    android:textColor="#ffffff"
+                                    android:textSize="25dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/iv_Allergies"
+                                    android:layout_gravity="center" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ll_Allergies" >
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp" >
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" >
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="藥物"
+                                            android:id="@+id/cb_Allergies1"
+                                            android:textSize="25dp"
+                                            android:textColor="#FFFFFF"
+                                            style="@style/CheckboxTheme"/>
+
+                                        <EditText
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:id="@+id/et_Allergies1"
+                                            android:textColor="#FFFFFF"
+                                            android:background="@drawable/corners_black"
+                                            android:nextFocusDown="@+id/et_Allergies2"
+                                            android:singleLine="true"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:textSize="25dp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" >
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="食物"
+                                            android:id="@+id/cb_Allergies2"
+                                            android:textSize="25dp"
+                                            android:textColor="#FFFFFF"
+                                            style="@style/CheckboxTheme"/>
+
+                                        <EditText
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:id="@+id/et_Allergies2"
+                                            android:textColor="#FFFFFF"
+                                            android:background="@drawable/corners_black"
+                                            android:nextFocusDown="@+id/et_Allergies3"
+                                            android:singleLine="true"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:textSize="25dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp" >
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2" >
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="其他"
+                                            android:id="@+id/cb_Allergies3"
+                                            android:textSize="25dp"
+                                            android:textColor="#FFFFFF"
+                                            style="@style/CheckboxTheme"/>
+
+                                        <EditText
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:id="@+id/et_Allergies3"
+                                            android:textColor="#FFFFFF"
+                                            android:background="@drawable/corners_black"
+                                            android:nextFocusDown="@+id/et_People"
+                                            android:singleLine="true"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:textSize="25dp" />
+
+                                    </LinearLayout>
+
+                                    <CheckBox
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:text="無"
+                                        android:id="@+id/cb_Allergies4"
+                                        android:textSize="25dp"
+                                        android:textColor="#FFFFFF"
+                                        style="@style/CheckboxTheme"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="補述"
+                android:textColor="#602f6b"
+                android:shadowColor="#602f6b"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="3"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView2"
+                android:background="@drawable/area_black_bg"
+                android:alpha="0.8" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="600dp"
+                        android:layout_weight="1"
+                        android:id="@+id/ll_People" >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="143"
+                                android:id="@+id/iv_People1"
+                                android:background="@drawable/people_01" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="172" >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="150"
+                                    android:id="@+id/iv_People2"
+                                    android:background="@drawable/people_02" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="210"
+                                    android:id="@+id/iv_People3"
+                                    android:background="@drawable/people_03" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="176"
+                                    android:id="@+id/iv_People4"
+                                    android:background="@drawable/people_04" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="225"  >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="150"
+                                    android:id="@+id/iv_People5"
+                                    android:background="@drawable/people_05" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="225" >
+
+                                    <ImageView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="125"
+                                        android:id="@+id/iv_People7"
+                                        android:background="@drawable/people_07" />
+
+                                    <ImageView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="100"
+                                        android:id="@+id/iv_People8"
+                                        android:background="@drawable/people_08" />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="176"
+                                    android:id="@+id/iv_People6"
+                                    android:background="@drawable/people_06" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="133"   >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="248"
+                                    android:id="@+id/iv_People9"
+                                    android:background="@drawable/people_09" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="288"
+                                    android:id="@+id/iv_People10"
+                                    android:background="@drawable/people_10" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="255"   >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="248"
+                                    android:id="@+id/iv_People11"
+                                    android:background="@drawable/people_11" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="288"
+                                    android:id="@+id/iv_People12"
+                                    android:background="@drawable/people_12" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="10dp" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="143"
+                                android:id="@+id/iv_People13"
+                                android:background="@drawable/people_13" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="172" >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="175"
+                                    android:id="@+id/iv_People14"
+                                    android:background="@drawable/people_14" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="208"
+                                    android:id="@+id/iv_People15"
+                                    android:background="@drawable/people_15" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="153"
+                                    android:id="@+id/iv_People16"
+                                    android:background="@drawable/people_16" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="358" >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="175"
+                                    android:id="@+id/iv_People17"
+                                    android:background="@drawable/people_17" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="208" >
+
+                                    <ImageView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="125"
+                                        android:id="@+id/iv_People18"
+                                        android:background="@drawable/people_18" />
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="233" >
+
+                                        <ImageView
+                                            android:layout_width="0dp"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="98"
+                                            android:id="@+id/iv_People20"
+                                            android:background="@drawable/people_20" />
+
+                                        <ImageView
+                                            android:layout_width="0dp"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="110"
+                                            android:id="@+id/iv_People21"
+                                            android:background="@drawable/people_21" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="153"
+                                    android:id="@+id/iv_People19"
+                                    android:background="@drawable/people_19" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="255" >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="273"
+                                    android:id="@+id/iv_People22"
+                                    android:background="@drawable/people_22" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="263"
+                                    android:id="@+id/iv_People23"
+                                    android:background="@drawable/people_23" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+                      
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_People"
+                            android:hint="補述"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/corners_black"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="25dp" />
+
+                        <Spinner
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sp_People"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/spinner_bg" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

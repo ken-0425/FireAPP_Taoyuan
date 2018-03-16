@@ -1,0 +1,1825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/app_content_bg"
+    android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="300dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="急救處置"
+                android:textColor="#602f6b"
+                android:shadowColor="#602f6b"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="3"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/area_black_bg"
+                android:alpha="0.8" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_SBreathing"
+                    android:background="@drawable/menu_switch_t"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="基本呼吸道/呼吸處置"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iv_Breathing"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_Breathing"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="口咽呼吸道"
+                            android:id="@+id/cb_Breathing1"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="鼻咽呼吸道"
+                            android:id="@+id/cb_Breathing2"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="抽吸"
+                            android:id="@+id/cb_Breathing3"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="哈姆立克法"
+                            android:id="@+id/cb_Breathing4"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="喉罩呼吸道"
+                                android:id="@+id/cb_Breathing5"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_Breathing5"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:nextFocusDown="@+id/et_Breathing6"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="號"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="鼻管"
+                                android:id="@+id/cb_Breathing6"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_Breathing6"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:nextFocusDown="@+id/et_Breathing7"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="L/Min"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="面罩"
+                                android:id="@+id/cb_Breathing7"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_Breathing7"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:nextFocusDown="@+id/et_Breathing10"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="L/Min"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="非再呼吸型面罩"
+                            android:id="@+id/cb_Breathing8"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="BVM"
+                            android:id="@+id/cb_Breathing9"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="其他"
+                                android:id="@+id/cb_Breathing10"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_Breathing10"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_STDisposal"
+                    android:background="@drawable/menu_switch_t"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="創傷處置"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iv_TDisposal"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_TDisposal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="頸圈"
+                            android:id="@+id/cb_TDisposal1"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="清洗傷口"
+                            android:id="@+id/cb_TDisposal2"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="止血、包紮"
+                            android:id="@+id/cb_TDisposal3"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="夾板固定"
+                            android:id="@+id/cb_TDisposal4"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="長背板固定"
+                            android:id="@+id/cb_TDisposal5"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="KED固定"
+                            android:id="@+id/cb_TDisposal6"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="抽氣式護木"
+                            android:id="@+id/cb_TDisposal7"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="其他"
+                                android:id="@+id/cb_TDisposal8"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_TDisposal8"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:nextFocusDown="@+id/et_TDisposal9"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3" >
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_SCPRDisposal"
+                    android:background="@drawable/menu_switch_t"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="心肺復甦術"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iv_CPRDisposal"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_CPRDisposal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CPR"
+                                android:id="@+id/cb_CPRDisposal1"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_CPRDisposal1"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:nextFocusDown="@+id/et_CPRDisposal1_Time"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="分鐘"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_CPRDisposal1_Time"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:nextFocusDown="@+id/et_CPRDisposal3_Time"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="使用自動心肺復甦機"
+                            android:id="@+id/cb_CPRDisposal2"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="使用AED"
+                                android:id="@+id/cb_CPRDisposal3"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_CPRDisposal3_Time"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_CPRDisposal3"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="#000000"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="電擊去顫"
+                                android:id="@+id/cb_CPRDisposal3_1"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_CPRDisposal3_1"
+                                android:textColor="#000000"
+                                android:background="@drawable/corners_white"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="次"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="不建議電擊"
+                            android:id="@+id/cb_CPRDisposal3_2"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_SDDisposal"
+                    android:background="@drawable/menu_switch_t"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="藥物處置"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iv_DDisposal"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_DDisposal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="靜脈輸液"
+                                android:id="@+id/cb_DDisposal1"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="，部位："
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_DDisposal1"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="給予口服葡萄糖液／粉"
+                            android:id="@+id/cb_DDisposal2"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_DDisposal1"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="#000000"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.9% N/S"
+                                android:id="@+id/cb_DDisposal1_1"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_DDisposal1_1"
+                                android:background="@drawable/corners_white"
+                                android:nextFocusDown="@+id/et_DDisposal1_2"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ml"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="L/R"
+                                android:id="@+id/cb_DDisposal1_2"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_DDisposal1_2"
+                                android:background="@drawable/corners_white"
+                                android:nextFocusDown="@+id/et_DDisposal1_3"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ml"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="葡萄糖液"
+                                android:id="@+id/cb_DDisposal1_3"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_DDisposal1_3"
+                                android:background="@drawable/corners_white"
+                                android:nextFocusDown="@+id/et_DDisposal3"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ml"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="協助使用NTG含片"
+                                android:id="@+id/cb_DDisposal3"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_DDisposal3"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:nextFocusDown="@+id/et_DDisposal4"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="片"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="協助使用支氣管擴張劑"
+                                android:id="@+id/cb_DDisposal4"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_DDisposal4"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="次"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_SODisposal"
+                    android:background="@drawable/menu_switch_t"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="其他處置"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iv_ODisposal"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_ODisposal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="保暖"
+                            android:id="@+id/cb_ODisposal1"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="心理支持"
+                            android:id="@+id/cb_ODisposal2"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="急產接生"
+                            android:id="@+id/cb_ODisposal3"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"
+                            style="@style/CheckboxTheme"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/cb_ODisposal4"
+                                    style="@style/CheckboxTheme"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="血糖監測"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+
+                                <Spinner
+                                    android:id="@+id/sp_ODisposal4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/spinner_bg"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/et_ODisposal4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/corners_black"
+                                    android:inputType="phone"
+                                    android:nextFocusDown="@+id/et_ODisposal5"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:singleLine="true"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="mg/dl"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="其他"
+                                android:id="@+id/cb_ODisposal5"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_ODisposal5"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_SALSDisposal"
+                    android:background="@drawable/menu_switch_t"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALS處置"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iv_ALSDisposal"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_ALSDisposal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="氣管內管："
+                                android:id="@+id/cb_ALSDisposal1"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_ALSDisposal1_1"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:nextFocusDown="@+id/et_ALSDisposal1_2"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="號(固定深度)fix："
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_ALSDisposal1_2"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:nextFocusDown="@+id/et_ALSDisposal2_1"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="cm"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3" >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="手動電擊："
+                                android:id="@+id/cb_ALSDisposal2"
+                                android:textSize="25dp"
+                                android:textColor="#FFFFFF"
+                                style="@style/CheckboxTheme"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_ALSDisposal2_1"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:nextFocusDown="@+id/et_ALSDisposal2_2"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="次："
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/et_ALSDisposal2_2"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Joule"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特定後送姿勢"
+                    android:textColor="#602f6b"
+                    android:shadowColor="#602f6b"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3"
+                    android:textSize="35dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/area_black_bg"
+                android:alpha="0.8" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="特定後送姿勢"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/sp_Posture"
+                            android:background="@drawable/spinner_bg"
+                            android:layout_marginRight="5dp" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/et_Posture"
+                            android:textColor="#FFFFFF"
+                            android:visibility="gone"
+                            android:background="@drawable/corners_black"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3" >
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="給藥"
+                    android:textColor="#602f6b"
+                    android:shadowColor="#602f6b"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3"
+                    android:textSize="35dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/area_black_bg"
+                android:alpha="0.8" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="時間"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="藥名"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="途徑/劑量"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="執行者"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp" >
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2" >
+
+                                    <EditText
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/et_DrugUseTime1"
+                                        android:textColor="#FFFFFF"
+                                        android:background="@drawable/corners_black"
+                                        android:inputType="phone"
+                                        android:singleLine="true"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="25dp" />
+
+                                </LinearLayout>
+
+                                <Spinner
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:id="@+id/sp_DrugUseName1"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_marginRight="5dp" />
+
+                                <Spinner
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:id="@+id/sp_DrugUseDose1"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_marginRight="5dp" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2" >
+
+                                    <EditText
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/et_DrugUser1"
+                                        android:textColor="#FFFFFF"
+                                        android:background="@drawable/corners_black"
+                                        android:singleLine="true"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="25dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp" >
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2" >
+
+                                    <EditText
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/et_DrugUseTime2"
+                                        android:textColor="#FFFFFF"
+                                        android:background="@drawable/corners_black"
+                                        android:inputType="phone"
+                                        android:singleLine="true"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="25dp" />
+
+                                </LinearLayout>
+
+                                <Spinner
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:id="@+id/sp_DrugUseName2"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_marginRight="5dp" />
+
+                                <Spinner
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:id="@+id/sp_DrugUseDose2"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_marginRight="5dp" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2" >
+
+                                    <EditText
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/et_DrugUser2"
+                                        android:textColor="#FFFFFF"
+                                        android:background="@drawable/corners_black"
+                                        android:singleLine="true"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="25dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp" >
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2" >
+
+                                    <EditText
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/et_DrugUseTime3"
+                                        android:textColor="#FFFFFF"
+                                        android:background="@drawable/corners_black"
+                                        android:inputType="phone"
+                                        android:singleLine="true"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="25dp" />
+
+                                </LinearLayout>
+
+                                <Spinner
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:id="@+id/sp_DrugUseName3"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_marginRight="5dp" />
+
+                                <Spinner
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:id="@+id/sp_DrugUseDose3"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_marginRight="5dp" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2" >
+
+                                    <EditText
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/et_DrugUser3"
+                                        android:textColor="#FFFFFF"
+                                        android:background="@drawable/corners_black"
+                                        android:singleLine="true"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="25dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2" >
+
+                                    <EditText
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/et_DrugUseTime4"
+                                        android:textColor="#FFFFFF"
+                                        android:background="@drawable/corners_black"
+                                        android:inputType="phone"
+                                        android:singleLine="true"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="25dp" />
+
+                                </LinearLayout>
+
+                                <Spinner
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:id="@+id/sp_DrugUseName4"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_marginRight="5dp" />
+
+                                <Spinner
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:id="@+id/sp_DrugUseDose4"
+                                    android:background="@drawable/spinner_bg"
+                                    android:layout_marginRight="5dp" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2" >
+
+                                    <EditText
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/et_DrugUser4"
+                                        android:textColor="#FFFFFF"
+                                        android:background="@drawable/corners_black"
+                                        android:singleLine="true"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="25dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

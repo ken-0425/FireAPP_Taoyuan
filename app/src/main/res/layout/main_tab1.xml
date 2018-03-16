@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/app_content_bg"
+    android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="300dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通報內容"
+                android:textColor="#602f6b"
+                android:shadowColor="#602f6b"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="3"
+                android:textSize="35dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="案號："
+                android:textColor="#602f6b"
+                android:shadowColor="#602f6b"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="3"
+                android:textSize="30dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_FNumber"
+                android:textColor="#602f6b"
+                android:shadowColor="#602f6b"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="3"
+                android:textSize="30dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_PDF"
+                android:background="@drawable/spinner_bg" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="危急個案"
+                android:id="@+id/cb_Critical"
+                android:textColor="#602f6b"
+                android:shadowColor="#602f6b"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="3"
+                android:textSize="35dp"
+                style="@style/CheckboxTheme"/>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/area_black_bg" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="日期："
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_Date"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/corners_black"
+                            android:nextFocusDown="@+id/et_AttendanceUnit"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="出勤單位："
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_AttendanceUnit"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/corners_black"
+                            android:nextFocusDown="@+id/et_LocationHappen"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:layout_marginRight="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="受案單位："
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <RadioGroup
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal"
+                            android:id="@+id/rg_AcceptedUnit">
+
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="8"
+                                android:id="@+id/rb_AcceptedUnit1"
+                                android:text="救災救護指揮中心"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_left"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="6"
+                                android:id="@+id/rb_AcceptedUnit2"
+                                android:text="分隊自行受理"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_right"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="發生地點："
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_LocationHappen"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/corners_black"
+                            android:nextFocusDown="@+id/et_AssistanceUnit"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="協同處理單位："
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_AssistanceUnit"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/corners_black"
+                            android:nextFocusDown="@+id/et_Time1"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="送往醫院或地點："
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/sp_HospitalAddress"
+                        android:background="@drawable/spinner_bg"
+                        android:layout_marginRight="5dp" />
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/sp_UploadHospital"
+                        android:background="@drawable/spinner_bg"
+                        android:layout_marginRight="5dp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:id="@+id/et_HospitalAddress"
+                        android:textColor="#FFFFFF"
+                        android:visibility="gone"
+                        android:background="@drawable/corners_black"
+                        android:nextFocusDown="@+id/et_Time1"
+                        android:singleLine="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="25dp" />
+
+                    <Button
+                        android:id="@+id/btn_Upload"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_crimson"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="上傳"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2" >
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4"
+                            android:text="就近適當"
+                            android:id="@+id/cb_HospitalAddress1"
+                            android:textColor="@drawable/radio_text_color"
+                            android:background="@drawable/radio_left"
+                            android:button="@null"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4"
+                            android:text="指揮中心"
+                            android:id="@+id/cb_HospitalAddress2"
+                            android:textColor="@drawable/radio_text_color"
+                            android:background="@drawable/radio_center"
+                            android:button="@null"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="8"
+                            android:id="@+id/cb_HospitalAddress3"
+                            android:text="傷病患或家屬要求"
+                            android:textColor="@drawable/radio_text_color"
+                            android:background="@drawable/radio_right"
+                            android:button="@null"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未送醫原因："
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:id="@+id/cb_NoHospital1"
+                            android:text="未發現"
+                            android:button="@null"
+                            android:textColor="@drawable/radio_text_color"
+                            android:background="@drawable/radio_left"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:id="@+id/cb_NoHospital2"
+                            android:text="誤報"
+                            android:button="@null"
+                            android:textColor="@drawable/radio_text_color"
+                            android:background="@drawable/radio_center"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4"
+                            android:id="@+id/cb_NoHospital3"
+                            android:text="中途取消"
+                            android:button="@null"
+                            android:textColor="@drawable/radio_text_color"
+                            android:background="@drawable/radio_center"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4"
+                            android:id="@+id/cb_NoHospital4"
+                            android:text="出勤待命"
+                            android:button="@null"
+                            android:textColor="@drawable/radio_text_color"
+                            android:background="@drawable/radio_center"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:id="@+id/cb_NoHospital5"
+                            android:text="不需要"
+                            android:button="@null"
+                            android:textColor="@drawable/radio_text_color"
+                            android:background="@drawable/radio_center"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:id="@+id/cb_NoHospital6"
+                            android:text="拒送"
+                            android:button="@null"
+                            android:textColor="@drawable/radio_text_color"
+                            android:background="@drawable/radio_center"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4"
+                            android:id="@+id/cb_NoHospital7"
+                            android:text="警察處理"
+                            android:button="@null"
+                            android:textColor="@drawable/radio_text_color"
+                            android:background="@drawable/radio_center"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4"
+                            android:text="現場死亡"
+                            android:id="@+id/cb_NoHospital8"
+                            android:button="@null"
+                            android:textColor="@drawable/radio_text_color"
+                            android:background="@drawable/radio_right"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"  >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_MHospital"
+                android:text="滿床醫院"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/btn_crimson" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_MHospital"
+                android:textColor="#ff0000"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="時間填寫"
+                android:textColor="#602f6b"
+                android:shadowColor="#602f6b"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="3"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/area_black_bg" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="出勤時間"
+                        android:id="@+id/tv_Time1"
+                        android:background="@drawable/btn_waterblue"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="5dp"
+                        android:textSize="25dp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="到達現場時間"
+                        android:id="@+id/tv_Time2"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/btn_waterblue"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="離開現場時間"
+                        android:id="@+id/tv_Time3"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/btn_waterblue"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="送達醫院時間"
+                        android:id="@+id/tv_Time4"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/btn_waterblue"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="離開醫院時間"
+                        android:id="@+id/tv_Time5"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/btn_waterblue"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="返隊待命時間"
+                        android:id="@+id/tv_Time6"
+                        android:background="@drawable/btn_waterblue"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1" >
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_Time1"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/corners_black"
+                            android:nextFocusDown="@+id/et_Time2"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1" >
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_Time2"
+                            android:textColor="#FFFFFF"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/corners_black"
+                            android:nextFocusDown="@+id/et_Time3"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1" >
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_Time3"
+                            android:textColor="#FFFFFF"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/corners_black"
+                            android:nextFocusDown="@+id/et_Time4"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1" >
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_Time4"
+                            android:textColor="#FFFFFF"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/corners_black"
+                            android:nextFocusDown="@+id/et_Name"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1" >
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_Time5"
+                            android:textColor="#FFFFFF"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/corners_black"
+                            android:nextFocusDown="@+id/et_Name"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_Time6"
+                            android:textColor="#FFFFFF"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/corners_black"
+                            android:nextFocusDown="@+id/et_Name"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="病患資料"
+                android:textColor="#602f6b"
+                android:shadowColor="#602f6b"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="3"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/area_black_bg" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:layout_marginRight="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="姓名："
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_Name"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/corners_black"
+                            android:nextFocusDown="@+id/et_Age"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="25dp" />
+
+                        <Spinner
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sp_Name"
+                            android:background="@drawable/spinner_bg"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="6"
+                        android:layout_marginRight="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="年齡："
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_marginRight="5dp" >
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="月"
+                                android:id="@+id/cb_AgeM"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_left"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="約"
+                                android:id="@+id/cb_AgeA"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_right"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3" >
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_Age"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:nextFocusDown="@+id/et_ID"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="性別："
+                            android:textColor="#FFFFFF"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="25dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" >
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="男"
+                                android:id="@+id/cb_Sex1"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_left"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="女"
+                                android:id="@+id/cb_Sex2"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_right"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:layout_marginLeft="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="身分證字號："
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_ID"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/corners_black"
+                            android:nextFocusDown="@+id/et_Address"
+                            android:inputType="textCapWords"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地址："
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="同發生地點"
+                            android:id="@+id/btn_Address"
+                            android:textSize="25dp"
+                            android:textColor="#ffffff"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@drawable/btn_waterblue" />
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sp_Area"
+                            android:background="@drawable/spinner_bg"
+                            android:layout_marginLeft="5dp" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_Address"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/corners_black"
+                            android:singleLine="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經手病人財物："
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" >
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="未經手"
+                                android:id="@+id/cb_Property1"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_left"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="有"
+                                android:id="@+id/cb_Property2"
+                                android:textColor="@drawable/radio_text_color"
+                                android:background="@drawable/radio_right"
+                                android:button="@null"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:id="@+id/ll_Custody_F" >
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:id="@+id/ll_Custody_T"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="關係："
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp"/>
+
+                            <Spinner
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/sp_RCustody"
+                                android:background="@drawable/spinner_bg"
+                                android:layout_marginRight="5dp" />
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_RCustody"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:visibility="gone"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="25dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="明細："
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp"/>
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_Custody"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/corners_black"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="25dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="保管人簽名："
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_SCustody"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="點此簽名"
+                        android:id="@+id/tv_SCustody"
+                        android:textColor="#F7FA00"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

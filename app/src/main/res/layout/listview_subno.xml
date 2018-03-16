@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_item"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/listview_select" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_item" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/iv_Select"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_SubnoID"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:padding="10dp"
+                android:gravity="left|center_vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/btn_Delete"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/delete_img" />
+
+</RelativeLayout>

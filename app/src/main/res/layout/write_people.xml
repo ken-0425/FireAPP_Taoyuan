@@ -1,0 +1,315 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/bottom_bar"
+        android:paddingTop="4dp" >
+
+        <Button
+            android:id="@+id/tablet_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="確定" />
+
+        <Button
+            android:id="@+id/tablet_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="清除" />
+
+        <Button
+            android:id="@+id/tablet_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/tablet_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/iv_People1"
+                            android:background="@drawable/people_01"
+                            android:layout_weight="143" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="172" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People2"
+                                android:background="@drawable/people_02"
+                                android:layout_weight="150" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People3"
+                                android:background="@drawable/people_03"
+                                android:layout_weight="210" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People4"
+                                android:background="@drawable/people_04"
+                                android:layout_weight="176" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="225" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People5"
+                                android:background="@drawable/people_05"
+                                android:layout_weight="150" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="210" >
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/iv_People7"
+                                    android:background="@drawable/people_07"
+                                    android:layout_weight="125" />
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/iv_People8"
+                                    android:background="@drawable/people_08"
+                                    android:layout_weight="100" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People6"
+                                android:background="@drawable/people_06"
+                                android:layout_weight="176" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="133" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People9"
+                                android:background="@drawable/people_09"
+                                android:layout_weight="248" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People10"
+                                android:background="@drawable/people_10"
+                                android:layout_weight="288" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="255" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People11"
+                                android:background="@drawable/people_11"
+                                android:layout_weight="248" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People12"
+                                android:background="@drawable/people_12"
+                                android:layout_weight="288" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/iv_People13"
+                            android:background="@drawable/people_13"
+                            android:layout_weight="143" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="172" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People14"
+                                android:background="@drawable/people_14"
+                                android:layout_weight="175" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People15"
+                                android:background="@drawable/people_15"
+                                android:layout_weight="208" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People16"
+                                android:background="@drawable/people_16"
+                                android:layout_weight="153" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="358" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People17"
+                                android:background="@drawable/people_17"
+                                android:layout_weight="175" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="208" >
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/iv_People18"
+                                    android:background="@drawable/people_18"
+                                    android:layout_weight="125" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="233" >
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="fill_parent"
+                                        android:id="@+id/iv_People20"
+                                        android:background="@drawable/people_20"
+                                        android:layout_weight="98" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="fill_parent"
+                                        android:id="@+id/iv_People21"
+                                        android:background="@drawable/people_21"
+                                        android:layout_weight="110" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People19"
+                                android:background="@drawable/people_19"
+                                android:layout_weight="153" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="255" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People22"
+                                android:background="@drawable/people_22"
+                                android:layout_weight="273" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_People23"
+                                android:background="@drawable/people_23"
+                                android:layout_weight="263" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

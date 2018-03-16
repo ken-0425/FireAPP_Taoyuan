@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_Drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#EFEFEF"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/text1"
+                android:src="@drawable/main_tab1"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/text2"
+                android:src="@drawable/main_tab2"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/text3"
+                android:src="@drawable/main_tab3"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/text4"
+                android:src="@drawable/main_tab4"
+                android:scaleType="fitXY"  />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/text5"
+                android:src="@drawable/main_tab5"
+                android:scaleType="fitXY"  />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDDDDD" >
+
+            <ImageView
+                android:id="@+id/cursor"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:layout_weight="3"
+                android:scaleType="fitXY"
+                android:src="#7d4aff" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.5dp"
+                android:layout_weight="3"
+                android:background="@null" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.5dp"
+                android:layout_weight="3"
+                android:background="@null" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.5dp"
+                android:layout_weight="3"
+                android:background="@null" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.5dp"
+                android:layout_weight="3"
+                android:background="@null" />
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.25dp"
+                android:layout_weight="1"
+                android:background="#9D9D9D" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.25dp"
+                android:layout_weight="1"
+                android:background="#ADADAD" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.25dp"
+                android:layout_weight="1"
+                android:background="#BEBEBE" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.25dp"
+                android:layout_weight="1"
+                android:background="#d0d0d0" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vPager"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#EFEFEF"
+            android:flipInterval="10"
+            android:persistentDrawingCache="animation" >
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_Drawer"
+        android:layout_gravity="start"
+        android:background="#333333" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@drawable/drawer_bg" >
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/lv_Drawer_Subno"
+                android:listSelector="@android:color/transparent" />
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:id="@+id/lv_Drawer_Item"
+                android:listSelector="@android:color/transparent"
+                android:divider="@null"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

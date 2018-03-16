@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">電子化救護紀錄表(第一版)</string>
+
+    <string name="open_left_drawer">Open Drawer</string>
+    <string name="close_left_drawer">Open Drawer</string>
+
+    <string name="web">http://210.241.86.143/FireAPP_Taoyuan/</string>
+
+    <string name="no_data">No data</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+</resources>

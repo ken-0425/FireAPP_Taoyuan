@@ -1,0 +1,328 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/app_login_bg">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tv_Version"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:gravity="bottom|start" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fl_CarID"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/area_black_bg" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="所屬大隊"
+                                android:textSize="35dp"
+                                android:textColor="#FFFFFF"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <Spinner
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/spinner_bg"
+                                android:id="@+id/sp_CarID1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="所屬分隊"
+                                android:textSize="35dp"
+                                android:textColor="#FFFFFF"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <Spinner
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/spinner_bg"
+                                android:id="@+id/sp_CarID2" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="30dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="確認"
+                                android:textSize="30dp"
+                                android:id="@+id/btn_Modify"
+                                android:textColor="#ffffff"
+                                android:background="@drawable/corners_black"
+                                android:padding="8dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="550dp"
+                    android:id="@+id/fl_Case"
+                    android:visibility="gone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/area_black_bg" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="已接收案件"
+                                    android:textSize="35dp"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <Button
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:id="@+id/btn_CDelete"
+                                    android:background="@drawable/case_delete" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_CDelete"
+                                    android:text="一鍵清除"
+                                    android:textSize="30dp"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/lv_Case"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                        </ListView>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/L_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:shadowColor="#000000"
+                android:textColor="#000000"
+                android:textSize="1dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_CarID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_purple"
+                    android:text="返回案件"
+                    android:textColor="#FFFFFF"
+                    android:textSize="45dp" />
+
+                <Button
+                    android:id="@+id/btn_Get"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_red"
+                    android:text="接收派遣"
+                    android:textColor="#FFFFFF"
+                    android:textSize="45dp" />
+
+                <Button
+                    android:id="@+id/btn_Try"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_blue"
+                    android:text="分隊受理"
+                    android:textColor="#FFFFFF"
+                    android:textSize="45dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
